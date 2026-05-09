@@ -1092,7 +1092,7 @@ export default function RolinaPortfolio() {
                   <b>Project Highlights</b>
                   <span>{selected.details}</span>
                 </div>
-                <button onClick={() => setSelected(null)}>Close Preview</button>
+                
               </div>
             </motion.div>
           </motion.div>
