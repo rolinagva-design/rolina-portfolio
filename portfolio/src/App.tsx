@@ -1100,7 +1100,8 @@ export default function RolinaPortfolio() {
           </motion.div>
         )}
       </AnimatePresence>
-      <Analytics />
+      <Analytics/>
+      <SpeedInsights/>
     </div>
   );
 }
