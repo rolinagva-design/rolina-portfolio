@@ -639,7 +639,11 @@ export default function RolinaPortfolio() {
       <div className="orb three" />
       <nav className="nav">
         <button onClick={() => scrollToSection("home")} className="brand">
-          <span>RC</span>
+           <img
+    src="/favicon.png"
+    alt="Rolina Cantre logo"
+    className="brand-logo"
+  />
           <b>Rolina Cantre</b>
         </button>
         <div className="nav-links">
