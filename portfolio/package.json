@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@vitejs/plugin-react": "latest",
+    "@vercel/analytics": "latest",
     "vite": "latest",
     "typescript": "latest",
     "react": "18.2.0",
