@@ -925,29 +925,84 @@ export default function RolinaPortfolio() {
           </div>
         </section>
 
-        <section id="experience" className="wrap section narrow">
+        <section id="experience" className="wrap section refined-experience-section">
           <SectionHeader
             eyebrow="Experience"
-            title="Experience across digital support and operations"
+            title="High-volume digital support across social media and Shopify"
+            text="A cleaner look at the work I’ve done behind the scenes — from managing 10+ agency client accounts to building Shopify layouts and supporting customer communication."
           />
-          <div className="timeline">
-            {experience.map(([date, role, company, detail]) => (
-              <div className="timeline-item" key={role + company}>
-                <div className="timeline-dot">
-                  <Icon name="briefcase" />
+
+          <div className="refined-experience-stack">
+            <div className="refined-experience-card primary-experience-card">
+              <div className="experience-copy-block">
+                <span>Digital Kairos Marketing Agency</span>
+                <h3>Managed caption creation and engagement posting for 10+ client brands simultaneously.</h3>
+                <p>
+                  I supported the agency’s day-to-day social media operations by
+                  keeping captions, engagement activity, post links, tracking,
+                  and reporting details organized across multiple client
+                  accounts. My focus was making high-volume execution feel
+                  cleaner, easier to review, and more consistent for the team.
+                </p>
+              </div>
+
+              <div className="experience-highlight-panel">
+                <div>
+                  <strong>10+</strong>
+                  <small>client accounts supported at once</small>
                 </div>
-                <div className="glass-card">
-                  <div className="experience-head">
-                    <div>
-                      <h3>{role}</h3>
-                      <p>{company}</p>
-                    </div>
-                    <span>{date}</span>
-                  </div>
-                  <p>{detail}</p>
+                <div>
+                  <strong>Caption + Engagement</strong>
+                  <small>daily LinkedIn execution support</small>
+                </div>
+                <div>
+                  <strong>Reporting Ready</strong>
+                  <small>organized links, metrics, and updates</small>
                 </div>
               </div>
-            ))}
+
+              <div className="experience-proof-list">
+                {[
+                  "Created and polished captions so posts were easier to publish and aligned with each client’s brand voice.",
+                  "Handled engagement posting and thoughtful comment support to keep accounts active, visible, and conversational.",
+                  "Tracked post links, impressions, screenshots, and weekly/monthly reporting notes for clearer team visibility.",
+                ].map((item) => (
+                  <div className="experience-proof-item" key={item}>
+                    <span>✦</span>
+                    <p>{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="refined-experience-card secondary-experience-card">
+              <div className="experience-copy-block">
+                <span>Shopify Design + Customer Support</span>
+                <h3>Built cleaner Shopify layouts while supporting customer conversations through Gorgias and email.</h3>
+                <p>
+                  I helped improve e-commerce workflows by supporting Shopify
+                  page design, product layout updates, storefront organization,
+                  and customer communication across Gorgias, email, and other
+                  support platforms. The goal was to make the store easier to
+                  browse and the customer experience easier to manage.
+                </p>
+              </div>
+
+              <div className="shopify-support-row">
+                <div>
+                  <Icon name="web" />
+                  <strong>Shopify layout support</strong>
+                </div>
+                <div>
+                  <Icon name="mail" />
+                  <strong>Gorgias + email support</strong>
+                </div>
+                <div>
+                  <Icon name="chart" />
+                  <strong>Customer workflow organization</strong>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -1243,4 +1298,10 @@ const styles = `
 }
 
 @media(max-width:1060px){.nav{border-radius:1.4rem;align-items:flex-start;flex-wrap:wrap}.nav-links{order:3;width:100%;overflow-x:auto}.hero,.about-grid,.about-premium-grid,.service-grid,.how-help-grid,.work-grid,.skill-category-grid,.contact-card,.modal-card,.testimonial-grid,.testimonial-video-card{grid-template-columns:1fr}.hero{padding-top:10rem}.work-card{height:auto;min-height:auto}.modal-preview{min-height:28rem}.testimonial-video-card>div:last-child{padding:1.2rem}}@media(max-width:650px){.wrap{width:min(100% - 1rem,1180px)}.about-story-card,.support-card{padding:1.4rem}.about-photo-pair{grid-template-columns:1fr!important}.support-feature{grid-template-columns:1fr;gap:.85rem}.support-feature-icon{width:4.15rem;height:4.15rem;font-size:1.65rem}.about-section-premium .section-header h2{font-size:2.65rem}.brand b,.work-btn{display:none}.hero h1{font-size:4rem}.portrait-card img{height:30rem}.portrait-card>div{left:1.2rem;right:1.2rem;bottom:1.2rem}.stats,.how-help-grid{grid-template-columns:1fr}.section{padding:4rem 0}.contact-card,.glass-card,.dark-card{border-radius:1.5rem;padding:1.4rem}.form-row,.experience-head{grid-template-columns:1fr;display:grid}footer{flex-direction:column}.phone{width:10.2rem;height:19.8rem}.phone-large{width:14rem;height:28rem}.work-preview{height:21rem}.vet-photo-grid{grid-template-columns:1fr}.testimonial-video-shell{min-height:18rem}.marquee-track{gap:1.8rem}.tool-logo-pill,.tool-logo-pill img{width:90px;height:90px}.service-icon{width:4.25rem;height:4.25rem;font-size:1.95rem}.service-icon span{font-size:2rem}.skill-icon{width:5rem!important;height:5rem!important;min-width:5rem;font-size:2.45rem}.skill-icon span{font-size:2.45rem!important}}
+
+
+/* ===== FINAL REFINED EXPERIENCE SECTION ===== */
+.refined-experience-section{padding-top:6.5rem}.refined-experience-section .section-header{max-width:76rem}.refined-experience-stack{display:grid;gap:1.15rem}.refined-experience-card{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.14);border-radius:2.35rem;background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.035));box-shadow:0 30px 90px rgba(0,0,0,.22);backdrop-filter:blur(18px)}.site:not(.dark) .refined-experience-card{border-color:rgba(15,23,42,.08);background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(248,250,252,.72))}.primary-experience-card{display:grid;grid-template-columns:1fr .92fr;gap:2rem;align-items:center;padding:3rem}.primary-experience-card:before,.secondary-experience-card:before{content:"";position:absolute;right:-9rem;top:-9rem;width:26rem;height:26rem;border-radius:999px;background:rgba(217,70,239,.14);filter:blur(46px)}.refined-experience-card>*{position:relative}.experience-copy-block span{display:block;margin-bottom:1rem;color:#d946ef;text-transform:uppercase;letter-spacing:.2em;font-size:.76rem;font-weight:950}.experience-copy-block h3{max-width:44rem;margin:0;color:var(--text);font-size:clamp(2.2rem,3.8vw,4.15rem);line-height:1;letter-spacing:-.07em}.experience-copy-block p{max-width:42rem;margin:1.55rem 0 0;color:var(--muted);font-size:1.05rem;line-height:1.82}.experience-highlight-panel{display:grid;gap:.85rem}.experience-highlight-panel div{padding:1.2rem 1.25rem;border:1px solid rgba(217,70,239,.16);border-radius:1.25rem;background:linear-gradient(145deg,rgba(217,70,239,.10),rgba(255,255,255,.045))}.experience-highlight-panel strong{display:block;color:var(--text);font-size:1.35rem;line-height:1.15;letter-spacing:-.04em}.experience-highlight-panel small{display:block;margin-top:.45rem;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;line-height:1.35}.experience-proof-list{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem;margin-top:.75rem}.experience-proof-item{display:grid;grid-template-columns:2rem 1fr;gap:.7rem;align-items:start;padding:1rem;border:1px solid var(--line);border-radius:1.15rem;background:var(--soft)}.experience-proof-item span{color:#d946ef;font-weight:900;line-height:1.55}.experience-proof-item p{margin:0;color:var(--muted);font-size:.94rem;line-height:1.62}.secondary-experience-card{display:grid;grid-template-columns:1fr .92fr;gap:2rem;align-items:center;padding:2.35rem 3rem}.secondary-experience-card .experience-copy-block h3{font-size:clamp(1.9rem,3vw,3.15rem);max-width:42rem}.shopify-support-row{display:grid;gap:.8rem}.shopify-support-row div{display:grid;grid-template-columns:3.2rem 1fr;gap:.85rem;align-items:center;padding:1rem 1.1rem;border:1px solid rgba(217,70,239,.14);border-radius:1.15rem;background:var(--soft)}.shopify-support-row span{width:3rem;height:3rem;display:grid;place-items:center;border-radius:1rem;background:linear-gradient(145deg,rgba(217,70,239,.18),rgba(124,58,237,.08));font-size:1.45rem}.shopify-support-row strong{color:var(--text);font-size:1rem;line-height:1.35}
+@media(max-width:1060px){.primary-experience-card,.secondary-experience-card{grid-template-columns:1fr}.experience-proof-list{grid-template-columns:1fr}.experience-highlight-panel{grid-template-columns:1fr}.shopify-support-row{grid-template-columns:1fr}}
+@media(max-width:900px){.refined-experience-section{padding-top:4rem}.primary-experience-card,.secondary-experience-card{padding:1.35rem;border-radius:1.55rem;gap:1.35rem}.experience-copy-block h3{font-size:clamp(2rem,10vw,3rem)}.secondary-experience-card .experience-copy-block h3{font-size:clamp(1.75rem,8vw,2.55rem)}.experience-copy-block p{font-size:.96rem;line-height:1.72}.experience-highlight-panel div,.experience-proof-item,.shopify-support-row div{padding:.95rem}.experience-proof-item p{font-size:.9rem;line-height:1.58}.shopify-support-row span{width:2.75rem;height:2.75rem;font-size:1.25rem}}
 `;
