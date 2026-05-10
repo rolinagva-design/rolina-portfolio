@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 
 type Category =
   | "All"
@@ -1101,7 +1100,6 @@ export default function RolinaPortfolio() {
         )}
       </AnimatePresence>
       <Analytics/>
-      <SpeedInsights/>
     </div>
   );
 }
