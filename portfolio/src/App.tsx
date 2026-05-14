@@ -76,10 +76,10 @@ const services: [string, string, IconName][] = [
     "spark",
   ],
   [
-    "Content Creation",
-    "Captions, branded visuals, content ideas, and creative assets designed for audience engagement and brand visibility.",
-    "image",
-  ],
+  "Creative Support",
+  "Branded visuals, caption writing, creative direction, and platform-ready assets designed to strengthen brand presence and audience engagement.",
+  "image",
+],
   [
     "Short-Form Video Editing",
     "Short-form video support for Reels, TikTok, and Shorts with polished editing, captions, hooks, and platform-ready formatting.",
