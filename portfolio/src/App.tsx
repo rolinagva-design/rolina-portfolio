@@ -382,8 +382,8 @@ const skillCategories = [
 const testimonials = [
   {
     type: "CLIENT TESTIMONIAL",
-    name: "Client Experience & Feedback",
-    role: "Client Proof",
+    name: "Kasey Brown",
+    role: "Founder & CEO of Digital Kairos",
     quote:
       "Kasey Brown, Founder & CEO of Digital Kairos, shared her experience working with me for nearly 3 years across LinkedIn, TikTok, Instagram, and short-form video management highlighting my reliability, communication, organization, attention to detail, and adaptability in supporting multiple clients and fast-moving workflows.",
     media: "/testimonial.mp4",
