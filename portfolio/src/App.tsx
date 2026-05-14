@@ -385,8 +385,8 @@ const testimonials = [
     name: "Client Experience & Feedback",
     role: "Client Proof",
     quote:
-      "Video feedback highlighting communication quality, reliability, organization, and overall client support experience.",
-    media: "/testimonial-video.mp4",
+      "Kasey Brown, Founder & CEO of Digital Kairos, shared her experience working with me for nearly 3 years across LinkedIn, TikTok, Instagram, and short-form video management highlighting my reliability, communication, organization, attention to detail, and adaptability in supporting multiple clients and fast-moving workflows.",
+    media: "/testimonial.mp4",
   },
   {
     type: "text",
